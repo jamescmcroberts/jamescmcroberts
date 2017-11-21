@@ -287,6 +287,9 @@ ul.list li:hover span{opacity:0;}
 ul.list img{filter:grayscale(100%);transition:.5s;height:250px;width:250px;object-fit:cover;}
 ul.list span{transition:.5s;margin:0;padding:0;opacity:.9;position:absolute;bottom:0;text-align:center;background-color:#ACC5C2;color:black;width:100%;}
 
+    /*Bio - Follow Links*/
+ul.list-social li{width:100%;}
+
 
 /*Footer*/
 footer{width:100%;text-align:center;background-color:#ACC5C2;height:50px;float:left;}
