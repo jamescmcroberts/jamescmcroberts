@@ -278,6 +278,7 @@ a.social-link img:hover{opacity:1;}
 aside{max-width:400px;%;float:right;}
 
     /*Bio - Games List*/
+div.bio ul {text-align:center;}
 ul.list-games li {width:250px;height:250px;margin:5px;position:relative;}
 ul.list-games li:hover img{filter:grayscale(0%);}
 ul.list-games img{filter:grayscale(100%);transition:.5s;height:250px;width:250px;object-fit:cover;}
