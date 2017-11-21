@@ -86,6 +86,9 @@ textarea {
     html header nav{text-align:center;}
 }
 @media screen and (max-width:1000px){
+    body .container img {height:150px;}
+    body ul.achievements li{width:100%;}
+
     html body{width:900px;}
     html div.contact img {width:100%;float:none;}
     html #contact-area{width:100%;float:none;}
@@ -112,7 +115,6 @@ textarea {
     div.gallery{width:150px;}
     div.gallery button{font-size:40px;}
     html body{width:100%;}
-    body .container img {height:340px!important;}
     body header h1 img {object-position:inherit;object-fit:scale-down;width:200px;}
     #contact-area label,body #contact-area input,body #contact-area textarea{font-size:15px;}
     body nav ul li {margin:9px;}
@@ -200,11 +202,12 @@ div.gallery{
     display:none;
 }
 .container img{
-    object-position:inherit;
+    object-position:top;
     width:100%;
-    object-fit:scale-down;
-    max-height:150px;
+    object-fit:cover;
+    height:300px;
 }
+
 button{
     position:absolute;
     font-size:30px;
@@ -298,6 +301,9 @@ ul.list span{transition:.5s;margin:0;padding:0;opacity:.9;position:absolute;bott
 
     /*Bio - Follow Links*/
 ul.list-social li{width:100%;}
+
+ul.achievements li{display:block; text-align:center;width:50%;}
+ul.achievements li:first-child {font-size:20px;}
 
 
 /*Footer*/
