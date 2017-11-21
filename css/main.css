@@ -153,7 +153,13 @@ html body{margin-top:0;}
 /*-----MEDIA QUERIES-----*/
 /*-----------------------*/ 
 
-
+html body{
+    background: url(../content/static/1.gif) no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;    
+}
 
 
 
