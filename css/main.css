@@ -115,7 +115,6 @@ textarea {
     div.gallery{width:150px;}
     div.gallery button{font-size:40px;}
     html body{width:100%;}
-    body header h1 img {object-position:inherit;object-fit:scale-down;width:200px;}
     #contact-area label,body #contact-area input,body #contact-area textarea{font-size:15px;}
     body nav ul li {margin:9px;}
     div.bio p {font-size:16px;}
