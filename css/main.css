@@ -140,11 +140,6 @@ textarea {
 @media screen and (max-width:736px){
 html body{margin-top:0;}
 }
-
-/*800px and lower*/
-@media screen and (max-width:800px){
-    article img{width:90%;height:auto;transition:.5s;-webkit-transition:.5s;margin-left:auto;margin-right:auto;display:block;}
-}
    
    /*Font Family - Futura Condensed Light*/
 @font-face {
@@ -177,8 +172,7 @@ body{
     }
 nav a {font-family:Helvetica;}
 nav{x-overflow:none;}
-ul.main-nav li{margin:0 20px};
-}
+ul.main-nav li{margin:0 20px;}
     
 /*-----------------------*/ 
 /*---------START---------*/ 
