@@ -228,7 +228,7 @@ button:hover{
     height:inherit;
 }
 p{margin:0;}
-span{display:block; border: solid transparent;}
+span{display:block; /*border: solid transparent;*/}
 div.container p span:first-of-type{display:inline;font-style:italic;}
 div.container p span:last-of-type{padding-top:10px; display:block;font-size:10px;font-weight:normal;}
 div.container p{font-size:14px;margin-top:10px;}
@@ -280,9 +280,12 @@ aside{max-width:400px;%;float:right;}
     /*Bio - Games List*/
 div.bio ul {text-align:center;}
 ul.list-games li {width:250px;height:250px;margin:5px;position:relative;}
-ul.list-games li:hover img{filter:grayscale(0%);}
+ul.list-games li.resize {height:250px;width:500px;margin:5px;position:relative;}
+ul.list-games li.resize img {width:100%;}
+ul.list-games li:hover img{filter:none;}
+ul.list-games li:hover span{opacity:0;}
 ul.list-games img{filter:grayscale(100%);transition:.5s;height:250px;width:250px;object-fit:cover;}
-ul.list-games span{position:absolute;bottom:0;text-align:center;background-color:black;color:beige;width:244px;}
+ul.list-games span{transition:.5s;margin:0;padding:0;opacity:.9;position:absolute;bottom:0;text-align:center;background-color:#ACC5C2;color:black;width:100%;}
 
 
 /*Footer*/
