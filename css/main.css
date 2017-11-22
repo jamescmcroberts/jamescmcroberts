@@ -77,6 +77,7 @@ textarea {
 @media screen and (max-width:585px){
     body ul.list li,body ul.list li.resize {height:250px;width:100%;;margin:5px;position:relative;}
     body ul.list li img{width:100%;}
+    body div.bio li{width:100px;}
 }
 
 
@@ -93,7 +94,7 @@ textarea {
     html div.contact img {width:100%;float:none;}
     html #contact-area{width:100%;float:none;}
     html body header nav{float:none;height:inherit;}
-    html header {height:200px;}
+   /* html header {height:200px;}*/
     body div.gallery{max-width:200px;position:relative;}
     body div.container {max-width:400px;}
     button.next{right:5px;}
@@ -102,12 +103,20 @@ textarea {
 @media screen and (max-width:900px){ 
     html body{max-width:100%;}
 }
+@media screen and (max-width:743px){
+    html ul.list-social {font-size:10px;}
+}
+@media screen and (max-width:611px){
+    html div.contact div#content, html div.contact:nth-child(1),html ul.list-social{width:100%;display:block;}
+    html ul.list-social{text-align:center;}
+}
+
 @media screen and (max-width:800px){
     html body{width:100%;}
     body nav ul li {font-size:1em;width:25%;}
     html body header nav {float:none;width:100%;margin:0;line-height:inherit;text-align:center;height:auto;}
     html header h1{width:100%;float:none;margin:0;}
-    html header {height:150px;margin:0;}
+   /*html header {height:150px;margin:0;}*/
 }
 @media screen and (max-width:500px){
     body div.gallery{max-width:100%;position:relative;height:auto!important;}
@@ -118,18 +127,20 @@ textarea {
     #contact-area label,body #contact-area input,body #contact-area textarea{font-size:15px;}
     body nav ul li {margin:9px;}
     div.bio p {font-size:16px;}
+    html body header h1{font-size:20px;}
+    html body header ul.main-nav li {margin:0 10px;}
    
 }   
 @media screen and (max-width:375px){
     html body, header h1{width:100%;}
-    html header {height:110px;margin:0;}
+   /* html header {height:110px;margin:0;}*/
     body header h1 a /*img*/ {width:50%;height:auto!important;}
     header h1{font-size:1.6em;}
     nav ul li {display:inline;margin:20px;}
     body ul li{margin:8px;}
     h3{margin:0;padding:0;margin-bottom:20px;}
     ul.main-nav a{font-size:12px;}
-    html header {height:120px;}
+   /* html header {height:120px;}*/
 
 }
 @media screen and (max-width:320px){
@@ -164,11 +175,11 @@ html body{
 
 
     /*Body Edits*/
-header{
+/*header{
         position:relative;height:140px;margin-left:-20px;
         height:200px;
         font-family: FuturaCondensedLight, Futura, "Trebuchet MS", Arial, sans-serif;
-    }
+    }*/
 body{
     font-family:Helvetica;
     font-weight:bold;
@@ -240,7 +251,7 @@ button:hover{
     height:inherit;
 }
 p{margin:0;}
-span{display:block; /*border: solid transparent;*/}
+span{text-transform:uppercase;display:block; /*border: solid transparent;*/}
 div.container p span:first-of-type{display:inline;font-style:italic;}
 div.container p span:last-of-type{padding-top:10px; display:block;font-size:10px;font-weight:normal;}
 div.container p{font-size:14px;margin-top:10px;}
@@ -273,21 +284,20 @@ ul li {display:inline;font-size:1.6em;}
 
 
     /*Personal Edits*/
-div.bio li {width:200px;font-size:14px;font-weight:bold;display:inline-block;}
-div.bio h2 span {color:#ACC5C2;display:inline;}
-div.bio h2{color:gold;}
+div.bio li {white-space:nowrap;width:200px;font-size:14px;font-weight:bold;display:inline-block;}
+div.bio h2 span,div.contact h2 span {color:#ACC5C2;display:inline;}
+div.bio h2,div.contact h2{color:gold;}
 div.bio,div.contact-area p{font-weight:bold;text-transform:initial;margin:0px 30px;}
-form{margin-left:60px;margin-right:60px;box-sizing:border-box;}
+form{margin-left:10px;margin-right:10px;box-sizing:border-box;}
 div.bio p {margin-bottom:20px;}
 div.contact img {width:50%;height:auto!important;}
 div.bio img {width:100%;}
 div.contact{margin-top:-8px;margin:0 auto;margin-left:30px;margin-right:30px;}
 .bio h2 {font-size:20px;}
 
-    /*Social Links*/
-a.social-link img{/*display:none*/;width:25px;height:auto!important;float:right;margin-top:-20px;margin-right:5px;opacity:.7;transition:.5s;-webkit-transition:.5s;}
-a.social-link img:hover{opacity:1;}
-aside{max-width:400px;%;float:right;}
+
+aside{max-width:400px;float:right;}
+div.contact aside{width:50%;float:right;}
 
     /*Bio - Games List*/
 div.bio ul {text-align:center;}
@@ -299,11 +309,16 @@ ul.list li:hover span{opacity:0;}
 ul.list img{filter:grayscale(100%);transition:.5s;height:250px;width:250px;object-fit:cover;}
 ul.list span{transition:.5s;margin:0;padding:0;opacity:.9;position:absolute;bottom:0;text-align:center;background-color:#ACC5C2;color:black;width:100%;}
 
-    /*Bio - Follow Links*/
-ul.list-social li{width:100%;}
+    /*Contact - Follow Links*/
+ul.list-social{font-size:12px;width:50%;float:right;}
+ul.list-social a {white-space:nowrap;}
+ul.list-social li{display:block;margin-left:10px;margin-right:10px;padding:5px;}
+img.reaching {width:100%;height:auto;}
+div.contact div#content, div.contact:nth-child(1){width:50%;}
 
 ul.achievements li{display:block; text-align:center;width:50%;}
 ul.achievements li:first-child {font-size:20px;}
+label:first-of-type{padding-top:0px;}
 
 
 /*Footer*/
@@ -464,10 +479,7 @@ div.thanksmessage{text-align:center;font-family:Helvetica;}
 }
 
 
-#contact-area {
-    width: 50%;
-    float:left;
-}
+
 
 
 label, h2 {font-family:Helvetica;font-size:20px;}
