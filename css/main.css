@@ -300,7 +300,7 @@ ul.list li.resize {height:250px;width:500px;margin:5px;position:relative;}
 ul.list li.resize img {width:100%;}
 ul.list li:hover img{filter:none;}
 ul.list li:hover span{opacity:0;}
-ul.list img{filter:grayscale(100%);transition:.5s;height:250px;width:250px;object-fit:cover;}
+ul.list img{-webkit-filter: grayscale(100%);filter:grayscale(100%);transition:.5s;height:250px;width:250px;object-fit:cover;}
 ul.list span{transition:.5s;margin:0;padding:0;opacity:.9;position:absolute;bottom:0;text-align:center;background-color:#ACC5C2;color:black;width:100%;}
 
     /*Contact - Follow Links*/
