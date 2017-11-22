@@ -88,7 +88,7 @@ textarea {
 }
 @media screen and (max-width:1000px){
     body .container img {height:150px;}
-    body ul.achievements li{width:100%;}
+    body ul.achievements li{width:100%;white-space:normal;}
     html div.contact img {width:100%;float:none;}
     html #contact-area{width:100%;float:none;}
     html body header nav{float:none;height:inherit;}
