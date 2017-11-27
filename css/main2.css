@@ -168,6 +168,8 @@ header img{
     width:100%;
 }
 
+
+body div.bio, body div.contact{max-width:1200px;}
 h1{background:url(../content/static/1.gif);color:white;}
 body{
     font-family:Helvetica;

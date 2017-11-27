@@ -88,16 +88,26 @@ textarea {
 }
 @media screen and (max-width:1000px){
     body header img {background-size:650px;height:100px;}
+    body .container img {height:150px;}
     body ul.achievements li{width:100%;white-space:normal;}
     html div.contact img {width:100%;float:none;}
     html #contact-area{width:100%;float:none;}
     html body header nav{float:none;height:inherit;}
    /* html header {height:200px;}*/
-    body div.gallery{position:relative;}
-    body div.home img {width:100%;height:400px;}
+    body div.gallery{max-width:200px;position:relative;}
+    body div.container {max-width:400px;}
+    button.next{right:5px;}
+    button.previous{left:5px;}
 }
 @media screen and (max-width:900px){ 
     html body{max-width:100%;}
+}
+@media screen and (max-width:743px){
+    html ul.list-social {font-size:10px;}
+}
+@media screen and (max-width:611px){
+    html div.contact div#content, html div.contact:nth-child(1),html ul.list-social{width:100%;display:block;}
+    html ul.list-social{text-align:center;}
 }
 
 @media screen and (max-width:800px){
@@ -107,26 +117,18 @@ textarea {
     html header h1{width:100%;float:none;margin:0;}
    /*html header {height:150px;margin:0;}*/
 }
-@media screen and (max-width:743px){
-    html ul.list-social {font-size:10px;}
-}
-
-@media screen and (max-width:611px){
-    html div.contact div#content, html div.contact:nth-child(1),html ul.list-social{width:100%;display:block;}
-    html ul.list-social{text-align:center;}
-}
-
 @media screen and (max-width:500px){
     body header img {background-size:400px;height:60px;}
-    body div.gallery{position:relative;width:100%;}
+    body div.gallery{max-width:100%;position:relative;height:auto!important;}
+    body div.container {max-width:330px;}
     div.gallery{width:150px;}
+    div.gallery button{font-size:40px;}
     html body{width:100%;}
     #contact-area label,body #contact-area input,body #contact-area textarea{font-size:15px;}
     body nav ul li {margin:9px;}
-    div.home p {font-size:16px;}
+    div.bio p {font-size:16px;}
     html body header h1{font-size:20px;}
     html body header ul.main-nav li {margin:0 10px;}
-    body div.home img {width:100%;height:300px;}
    
 }   
 @media screen and (max-width:375px){
@@ -168,6 +170,8 @@ header img{
     width:100%;
 }
 
+
+body div.bio, body div.contact{max-width:1200px;}
 h1{background:url(../content/static/1.gif);color:white;}
 body{
     font-family:Helvetica;
@@ -189,6 +193,7 @@ div.gallery{
     position:relative;
 }
 .container{
+    max-width:900px;
     background-color:transparent;
     margin:0 auto;
     text-align:center;
@@ -207,8 +212,6 @@ div.gallery{
     height:300px;
 }
 div.container div p{margin-bottom:0;}
-
-div.home img {width:100%;height:500px;}
 
 button{
     position:absolute;
@@ -231,26 +234,28 @@ button:hover{
     text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
 }
 .next{
-    top:-5px;
+    top:20px;
     right:0px;
     height:inherit;
 
 }
 .previous{
-    top:-5px;
+    top:20px;
     left:0px;
     height:inherit;
 }
 p{margin:0;}
 span{text-transform:uppercase;display:block; /*border: solid transparent;*/}
-div.container span:first-of-type{display:inline;font-style:italic;}
-div.container span:last-of-type{padding-top:10px; display:block;font-size:10px;font-weight:normal;}
-div.container span{font-size:14px;margin-top:10px;}
+div.container p span:first-of-type{display:inline;font-style:italic;}
+div.container p span:last-of-type{padding-top:10px; display:block;font-size:10px;font-weight:normal;}
+div.container p{font-size:14px;margin-top:10px;}
 /*-----------------------*/ 
 /*----------END----------*/ 
 /*----GALLERY CHANGES----*/
 /*-----------------------*/ 
 
+
+div.container span:nth-of-type(1){margin-top:50px}
 div.container span {text-align:center;}
 
     /*Link Edits*/
@@ -273,31 +278,29 @@ ul li {display:inline;font-size:1.6em;}
 
 
     /*Personal Edits*/
-div.home li, div.bio li {white-space:nowrap;font-size:14px;font-weight:bold;display:inline-block;}
-
-h2 span {color:#ACC5C2;display:inline;}
-h2{color:gold;}
-div.home,div.contact-area p{font-weight:bold;text-transform:initial;}
-div.contact-area p{margin:0px 30px;}
+div.bio li {white-space:nowrap;width:200px;font-size:14px;font-weight:bold;display:inline-block;}
+div.bio h2 span,div.contact h2 span {color:#ACC5C2;display:inline;}
+div.bio h2,div.contact h2{color:gold;}
+div.bio,div.contact-area p{font-weight:bold;text-transform:initial;margin:0px 30px;}
 form{margin-left:10px;margin-right:10px;box-sizing:border-box;}
-div.home p {margin-bottom:20px;}
+div.bio p {margin-bottom:20px;}
 div.contact img {width:50%;height:auto!important;}
 div.bio img {width:100%;}
 div.contact{margin-top:-8px;margin:0 auto;margin-left:30px;margin-right:30px;}
-.home h2 {font-size:20px;}
+.bio h2 {font-size:20px;}
 
 
 aside{max-width:400px;float:right;}
 div.contact aside{width:50%;float:right;}
 
     /*Bio - Games List*/
-ul {text-align:center;}
+div.bio ul {text-align:center;}
 ul.list li {width:250px;height:250px;margin:5px;position:relative;}
 ul.list li.resize {height:250px;width:500px;margin:5px;position:relative;}
 ul.list li.resize img {width:100%;}
 ul.list li:hover img{filter:none;}
 ul.list li:hover span{opacity:0;}
-ul.list img{-webkit-filter: grayscale(100%);filter:grayscale(100%);transition:.5s;-webkit-backface-visibility: hidden;backface-visibility:hidden;height:250px;width:250px;object-fit:cover;}
+ul.list img{-webkit-filter: grayscale(100%);filter:grayscale(100%);transition:.5s;height:250px;width:250px;object-fit:cover;}
 ul.list span{text-transform:none;transition:.5s;margin:0;padding:0;opacity:.9;position:absolute;bottom:0;text-align:center;background-color:#ACC5C2;color:black;width:100%;}
 
     /*Contact - Follow Links*/
@@ -307,7 +310,7 @@ ul.list-social li{display:block;margin-left:10px;margin-right:10px;padding:5px;}
 img.reaching {width:100%;height:auto;}
 div.contact div#content, div.contact:nth-child(1){width:50%;}
 
-ul.achievements li{display:block;}
+ul.achievements li{display:block; text-align:center;width:50%;}
 ul.achievements li:first-child {font-size:20px;}
 label:first-of-type{padding-top:0px;}
 
