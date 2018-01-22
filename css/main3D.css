@@ -303,10 +303,10 @@ ul.list span{text-transform:none;transition:.5s;margin:0;padding:0;opacity:.9;po
 
  /*3D tests*/
  .stage {
-  width: 300px; height: 300px;
+  width: 250px; height: 250px;
   -webkit-perspective: 1600px;
   -webkit-perspective-origin: 50% -240px;
-  display:table-cell;
+  display:inline-block;float:none;
 }
 div.stage{padding: 0 10px 0 10px;}
 figure {
@@ -335,11 +335,10 @@ figure { -webkit-transform-origin: 50% 50% 0; }
 }
 @-webkit-keyframes rotate-neg {
   0% { -webkit-transform: rotateX(0) rotateY(0);}
-  100% { -webkit-transform: rotateX(360deg) rotateY(360deg);}
+  100% { -webkit-transform: rotateX(360deg) rotateY(-360deg);}
 }
 .cube { -webkit-animation: rotate-pos 10s infinite linear;}
-.stage:nth-child(odd) .cube { -webkit-animation: rotate-neg 10s infinite linear;}
-.stage figure:hover{filter:grayscale(100%);}
+.stage:nth-child(odd) figure{filter:grayscale(100%);}
 .stage figure{transition:.7s;-webkit-transition:.7s;}
 figure:before, figure:after {
   content: ""; display: block; position: absolute;
