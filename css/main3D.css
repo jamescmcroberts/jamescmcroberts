@@ -338,7 +338,7 @@ figure { -webkit-transform-origin: 50% 50% 0; }
   100% { -webkit-transform: rotateX(360deg) rotateY(-360deg);}
 }
 .cube { -webkit-animation: rotate-pos 10s infinite linear;}
-.stage:nth-child(odd) figure{filter:grayscale(100%);}
+.stage:nth-child(odd) {filter:invert(100%);}
 .stage figure{transition:.7s;-webkit-transition:.7s;}
 figure:before, figure:after {
   content: ""; display: block; position: absolute;
@@ -362,6 +362,7 @@ figure:after {
   -webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.7);
   background-color: rgba(0, 0, 0, 0);
 }
+
 
     /*Contact - Follow Links*/
 ul.list-social{font-size:12px;width:50%;float:right;}
