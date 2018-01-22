@@ -324,7 +324,7 @@ figure { -webkit-transform-origin: 50% 50% 0; }
 .bottom { -webkit-transform: rotateX(-90deg) translateZ(150px); 
     background:url(../content/games/SuperSmashBrosMelee.gif);}
 .left { -webkit-transform: rotateY(-90deg) translateZ(150px);
-    background:url(../content/games/SuperMarioStrikers.gif);}
+    background:url(../content/games/SuperMarioStrikers.gif); }
 .right { -webkit-transform: rotateY(90deg) translateZ(150px); 
     background:url(../content/games/BanjoKazooie.gif);}
 
