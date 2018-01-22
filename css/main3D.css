@@ -179,6 +179,7 @@ body{
 nav a {font-family:Helvetica;}
 nav{x-overflow:none;}
 ul.main-nav li{margin:0 20px;}
+ul.main-nav li{display:inline;}
     
 /*-----------------------*/ 
 /*---------START---------*/ 
@@ -366,6 +367,9 @@ figure:after {
   background-color: rgba(0, 0, 0, 0);
 }
 
+/*Font Awesome*/
+li a i.fa {font-size:1em;font-weight:bold;font-family:Helvetica;}  
+li a i.fa::before {font-size:1em;font:normal normal normal 14px/1 FontAwesome;}
 
     /*Contact - Follow Links*/
 ul.list-social{font-size:12px;width:50%;float:right;}
