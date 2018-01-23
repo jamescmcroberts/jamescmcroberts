@@ -178,9 +178,9 @@ body{
     margin: 0 auto;
     }
 nav a {font-family:Helvetica;}
-nav{x-overflow:none;}
+nav{x-overflow:none;background-color:green;}
 ul.main-nav li{margin:0 20px;}
-ul.main-nav li{display:inline;}
+ul.main-nav li{display:inline;white-space:nowrap;}
     
 /*-----------------------*/ 
 /*---------START---------*/ 
@@ -566,12 +566,12 @@ figure { -webkit-transform-origin: 50% 50% 0; }
     background:url(../content/games/KingdomHearts.gif);}/*background:url(../content/games/BanjoKazooie.gif);}*/
 
 @-webkit-keyframes rotate-pos {
-  0% { -webkit-transform: rotateX(0) rotateY(0);}
-  100% { -webkit-transform: rotateX(360deg) rotateY(360deg);}
+  0% { -webkit-transform: rotateX(0) rotateY(0) rotateZ(0)}
+  100% { -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
 }
 @-webkit-keyframes rotate-neg {
   0% { -webkit-transform: rotateX(0) rotateY(0);}
-  100% { -webkit-transform: rotateX(360deg) rotateY(-360deg);}
+  100% { -webkit-transform: rotateX(360deg) rotateY(-360deg); }
 }
 .cube { -webkit-animation: rotate-pos 10s infinite linear;}
 .stage:nth-child(1) {filter:none;}
@@ -591,15 +591,17 @@ figure:after {
 }
 @-webkit-keyframes frontShading1 {
   2% { opacity: 0; }
-  25% { opacity: 0.8; }
-  35% { opacity: 0.8; }
+  25% { opacity: 0.6; }
+  35% { opacity: 0.6; }
   50% { opacity: 0; }
 }
-.front:before { -webkit-animation: frontShading1 10s infinite linear; }
+
+figure:before { -webkit-animation: frontShading1 1s infinite linear; }
 
 .bottom {
   -webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.7);
   background-color: rgba(0, 0, 0, 0);
 }
 div.test{overflow-y:hidden;background-color:gray;}
+div.cube-meta{color:red;position:absolute;text-align:center;width:100%;}
 
