@@ -544,7 +544,7 @@ div.resume img{max-width:100%;}
   display:inline-block;float:none;
 }
 div.stage{padding: 0 10px 0 10px;
-    margin:0 auto;display:block;margin-top:300px;
+    margin:300px auto 300px auto;;display:block;
 }
 figure {
   display: block; position: absolute;
@@ -565,19 +565,16 @@ figure { -webkit-transform-origin: 50% 50% 0; }
 .right { -webkit-transform: rotateY(90deg) translateZ(150px); 
     background:url(../content/games/KingdomHearts.gif);}/*background:url(../content/games/BanjoKazooie.gif);}*/
 
-@-webkit-keyframes rotate-pos {
+@-webkit-keyframes rotateY {
   0% { -webkit-transform: rotateX(0) rotateY(0) rotateZ(0)}
-  100% { -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+  100% { -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);}
 }
-@-webkit-keyframes rotate-neg {
-  0% { -webkit-transform: rotateX(0) rotateY(0);}
-  100% { -webkit-transform: rotateX(360deg) rotateY(-360deg); }
-}
-.cube { -webkit-animation: rotate-pos 10s infinite linear;}
 .stage:nth-child(1) {filter:none;}
 .stage:nth-child(2) {filter:invert(100%);}
 .stage:nth-child(3) {filter:grayscale(100%);}
 .stage:nth-child(4) {filter:hue-rotate(90deg);}
+.stage:nth-child(1) .cube,.stage:nth-child(3) .cube { -webkit-animation: rotateY 10s infinite linear;}
+.stage:nth-child(2) .cube,.stage:nth-child(4) .cube { -webkit-animation: rotateY 10s infinite linear reverse}
 .stage figure{transition:.7s;-webkit-transition:.7s;}
 figure:before, figure:after {
   content: ""; display: block; position: absolute;
@@ -597,6 +594,7 @@ figure:after {
 }
 
 figure:before { -webkit-animation: frontShading1 1s infinite linear; }
+
 
 .bottom {
   -webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.7);
