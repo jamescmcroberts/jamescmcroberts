@@ -301,6 +301,7 @@ ul.list li.resize img {width:100%;}
 ul.list li:hover img{filter:none;}
 ul.list li:hover span{opacity:0;}
 ul.list img{-webkit-filter: grayscale(100%);filter:grayscale(100%);transition:.5s;-webkit-backface-visibility: hidden;backface-visibility:hidden;height:250px;width:250px;object-fit:cover;}
+ul.list li:nth-child(odd) img {-webkit-filter:grayscale(0%); filter:grayscale(0%;)}
 ul.list span{text-transform:none;transition:.5s;margin:0;padding:0;opacity:.9;position:absolute;bottom:0;text-align:center;background-color:#ACC5C2;color:black;width:100%;}
 
 /*Font Awesome*/
