@@ -18,7 +18,7 @@
 		<script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile.custom/jquery.mobile.custom.min.js"></script>
 	
-		<style>li.active{color:#ACC5C2}</style>		
+		<style>li.active{color:#ACC5C2}</style>	
 		
 <!--BEGIN SCRIPTS SECTION-->
 		<script>
@@ -26,8 +26,8 @@
 			<!--Done Loading-->
 			console.log("Welcome to James Mcroberts' site");
 //BEGIN HIDE BIO/CONTACT ON PAGELOAD
-			//$("div.resume").hide();
-			$("a.contact").addClass("active")
+			$("div.contact,div.resume").hide();
+			$("a.home").addClass("active")
 //////////////////////////////////////////
 //				Nav Clicks 				//
 //////////////////////////////////////////
@@ -127,42 +127,9 @@
 				</ul>
 			</nav>
 		</header>
+<!--BEGIN BLOG SECTION-->
+		<div class="blog">	
+			<p>Coming Soon</p>
 		</div>
-<!--BEGIN CONTACT SECTION-->
-		<div class="contact">
-			<div>
-				<h2>∆                           ∆<br>∆ ∆  <span>Follow Me</span>  ∆ ∆</h2>
-				<ul class="list-social">
-					<li>Github | <a href="https://github.com/jamescmcroberts">jamescmcroberts</a> <a href="https://github.com/jamescmcroberts/maryluke">(1st Repo)</a> <a href="https://github.com/jamescmcroberts/jamescmcroberts">(2nd Repo)</a></li>
-					<li>Xbox Gamertag | <a href="https://www.xboxgamertag.com/search/mcgyna/">McGyna</a></li>
-					<li>Facebook | <a href="https://www.facebook.com/4mcroberts">4mcroberts</a></li>
-					<li>LinkedIn | <a href="https://www.linkedin.com/in/jamesmcroberts/">jamesmcroberts</a></li>
-					<li>Soundcloud | <a href="https://soundcloud.com/mcgyna">McGyna</a></li>
-					<li>Spotify | <a href="https://open.spotify.com/user/4mcroberts">4mcroberts</a></li>
-					<li>Instagram | <a href="https://www.instagram.com/jamesmcroberts/">jamesmcroberts</a></li>
-					<li>Snapchat | <a href="https://www.snapchat.com/add/jamesmcroberts">jamesmcroberts</a></li>
-					<li>Etsy | <a href="https://www.etsy.com/people/jmethomas25">jmethomas25</a></li>
-				</ul>
-			</div>
-			<div id="content">
-				<div id="page-wrap">
-					<div id="contact-area">	
-						<form action="http://formspree.io/4mcroberts@gmail.com" method="POST">
-							<label for="Name">Name:</label>
-								<input type="text" name="Name" id="Name" required placeholder="Enter a name"/>
-							<label for="City">City:</label>
-								<input type="text" name="City" id="City" required placeholder="Enter a city"/>
-							<label for="Email">Email:</label>
-								<input type="email" name="Email" id="Email" required placeholder="Enter a valid email address"/>
-							<label for="Message">Message:</label>
-								<textarea name="Message" rows="20" cols="20" id="Message" required placeholder="Enter a message"></textarea>
-							<input type="submit" name="submit" value="Submit" class="submit-button" />
-						</form>	
-						<div style="clear: both;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<img class="reaching" src="content/Contact.jpg" alt="Reaching For That Thing"/>
-	</body>
-</html>
+ 	</body>
+ </html>
