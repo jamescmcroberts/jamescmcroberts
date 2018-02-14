@@ -25,89 +25,8 @@
 		$(document).ready(function(){
 			<!--Done Loading-->
 			console.log("Welcome to James Mcroberts' site");
-//BEGIN HIDE BIO/CONTACT ON PAGELOAD
-			//$("div.resume").hide();
-			$("a.contact").addClass("active")
-//////////////////////////////////////////
-//				Nav Clicks 				//
-//////////////////////////////////////////
-//BEGIN DISPLAY GALLERY SECTION ON NAV CLICK
-			$("a.gallery").click(function(e){
-				$("div.bio,div.contact,div.resume").hide();
-				$("div.gallery").show();
-				$(this).addClass("active"); 
-				$("a.bio,a.contact,a.resume").removeClass("active"); 
-			})
-//BEGIN DISPLAY BIO SECTION ON NAV CLICK
-			$("a.bio").click(function(e){
-				$("div.contact,div.resume").hide();
-				$("div.bio").show();
-				$(this).addClass("active"); 
-				$("a.gallery,a.contact,a.resume").removeClass("active"); 
-			})
-//BEGIN DISPLAY CONTACT SECTION ON NAV CLICK
-			$("a.contact").click(function(e){
-				$("div.bio,div.resume").hide();
-				$("div.contact").show();
-				$(this).addClass("active"); 
-				$("a.gallery,a.bio,a.resume").removeClass("active"); 
-			})
-/*
-//BEGIN DISPLAY RESUME SECTION ON NAV CLICK
-			$("a.resume").click(function(e){
-				$("div.contact,div.bio").hide();
-				$("div.resume").show();
-				$(this).addClass("active");
-				$("a.gallery,a.contact,a.bio").removeClass("active");
-			})*/
-
-//BEGIN IMAGE CAROUSEL VARIABLES
-	var currentIndex = 0,
-	items = $('.container div'),
-	itemAmt = items.length;
-
-	function cycleItems() {
-		var item = $('.container div').eq(currentIndex);
-		items.hide();
-		item.css('display','inline-block');
-	}
-//BEGIN AUTOSCROLL AFTER 10S (10000ms)
-	var autoSlide = setInterval(function() {
- 		currentIndex += 1;
- 			if (currentIndex > itemAmt - 1) {
-   			currentIndex = 0;
-  			}
-  		cycleItems();
-	}, 10000);
-//BEGIN CONSOLE CALL TO DISPLAY CURRENT TOTAL OF IMAGES IN ARRAY
-		console.log("There are " + itemAmt + " images in this carousel. Displaying IMG #1")
-		//Test Pop-up// alert("There are " + itemAmt + " images in this carousel")
-
-//BEGIN IMAGE CAROUSEL FUNCTIONS FOR NEXT
-	$('.next').click(function() {
-		console.log("Clicked Next, displaying IMG # " + (currentIndex+2)) /*needs work*/
-		//This ^^^^^^ needs fixing
-  		clearInterval(autoSlide);
-  		currentIndex += 1;
-  			if (currentIndex > itemAmt - 1) {
-    		currentIndex = 0;
-  			}
-  		cycleItems();
-	});
-//BEGIN IMAGE CAROUSEL FUNCTIONS FOR PREVIOUS
-	$('.previous').click(function() {
-		console.log("Clicked Previous, displaying IMG # " + (currentIndex-2)) /*needs work*/
-		//This ^^^^^^ needs fixing
-  		clearInterval(autoSlide);
-  		currentIndex -= 1;
-  			if (currentIndex < 0) {
-    		currentIndex = itemAmt - 1;
-  			}
-  		cycleItems();
-	});
-
 //BEGIN SCRIPT END BRACKETS
-	});
+		});
 </script>
 
 	</head>
@@ -119,8 +38,8 @@
 			<nav>
 				<ul class="main-nav">
 					<li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-					<li><a href="about.html"><i class="fa fa-heart"></i>About</a></li>
-					<li><a href="test.html"><i class="fa fa-gear"></i>Experiments</a></li>
+					<li><a href="hobbies.html"><i class="fa fa-heart"></i>Hobbies</a></li>
+					<li><a href="experiments.html"><i class="fa fa-gear"></i>Experiments</a></li>
 					<li><a href="content/Resume.pdf"><i class="fa fa-file"></i>Resume</a></li>
 					<li><a href="blog.html"><i class="fa fa-comment"></i>Blog</a></li>
 					<li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
