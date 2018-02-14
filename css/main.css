@@ -542,8 +542,9 @@ label {
   display:inline-block;float:none;
 }
 div.stage{padding: 0 10px 0 10px;
-    margin:300px auto 300px auto;;display:block;
+    margin:50px auto 300px auto;;display:block;
 }
+.cube{transform:scale(2);}
 figure {
   display: block; position: absolute;
   width: 300px; height: 300px;}
@@ -567,12 +568,12 @@ figure { -webkit-transform-origin: 50% 50% 0; }
   0% { -webkit-transform: rotateX(0) rotateY(0) rotateZ(0)}
   100% { -webkit-transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);}
 }
-.stage:nth-child(1) {filter:none;}
-.stage:nth-child(2) {filter:invert(100%);}
-.stage:nth-child(3) {filter:grayscale(100%);}
-.stage:nth-child(4) {filter:hue-rotate(90deg);}
-.stage:nth-child(1) .cube,.stage:nth-child(3) .cube { -webkit-animation: rotateY 10s infinite linear;}
-.stage:nth-child(2) .cube,.stage:nth-child(4) .cube { -webkit-animation: rotateY 10s infinite linear reverse}
+.stage:nth-child(2) {filter:none;}
+.stage:nth-child(3) {filter:invert(100%);}
+.stage:nth-child(4) {filter:grayscale(100%);}
+.stage:nth-child(5) {filter:hue-rotate(90deg);}
+.stage:nth-child(2) .cube,.stage:nth-child(4) .cube { -webkit-animation: rotateY 10s infinite linear;}
+.stage:nth-child(3) .cube,.stage:nth-child(5) .cube { -webkit-animation: rotateY 10s infinite linear reverse}
 .stage figure{transition:.7s;-webkit-transition:.7s;}
 figure:before, figure:after {
   content: ""; display: block; position: absolute;
@@ -600,6 +601,11 @@ div.bio figure:before { -webkit-animation: frontShading1 1s infinite linear; }
 }
 div.test{overflow-y:hidden;background-color:gray;}
 div.cube-meta{color:red;position:absolute;text-align:center;width:100%;}
+.test h3:hover {
+    -webkit-transform:rotate(360deg) ;
+    transform:rotate(360deg);
+    -webkit-transition:2s ;
+    transition:2s ;}
 
 
 /*Blog Notes*/
