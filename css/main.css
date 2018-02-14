@@ -181,14 +181,12 @@ html body{margin-top:0;}
 /*-----MEDIA QUERIES-----*/
 /*-----------------------*/
 header img{
-    background:url(../content/static/2.gif);
+    background:url(../content/header.gif);
     background-position:top center;
     height:200px;
     width:100%;
     display:block;
 }
-
-h1{background:url(../content/static/1.gif);color:white;}
 body{
     font-family:Helvetica;
     font-weight:bold;
