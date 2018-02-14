@@ -611,7 +611,7 @@ div.bio figure:before { -webkit-animation: frontShading1 1s infinite linear; }
   background-color: rgba(0, 0, 0, 0);
 }
 div.test{overflow:hidden;background-color:gray;width:100%;}
-div.cube-meta{color:red;position:absolute;text-align:center;width:100%;font-size:25px;}
+.cube-meta{color:red;position:absolute;text-align:center;width:100%;font-size:25px;}
 .test h3:hover {
     -webkit-transform:rotate(360deg) ;
     transform:rotate(360deg);
