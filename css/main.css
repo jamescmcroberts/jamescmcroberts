@@ -544,11 +544,11 @@ label {
 div.stage{padding: 0 10px 0 10px;
     margin:300px auto 300px auto;;display:block;
 }
-div.bio figure {
+figure {
   display: block; position: absolute;
   width: 300px; height: 300px;}
 .cube { -webkit-transform-style: preserve-3d; }
-div.bio figure { -webkit-transform-origin: 50% 50% 0; }
+figure { -webkit-transform-origin: 50% 50% 0; }
 .stage figure{background-position:center;background-size:cover;}
 .front { -webkit-transform: translateZ(150px); 
     background:url(../content/games/KingdomHearts.gif);}/*background:url(../content/games/OcarinaOfTime.gif);}*/
