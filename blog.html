@@ -25,87 +25,6 @@
 		$(document).ready(function(){
 			<!--Done Loading-->
 			console.log("Welcome to James Mcroberts' site");
-//BEGIN HIDE BIO/CONTACT ON PAGELOAD
-			$("div.contact,div.resume").hide();
-			$("a.home").addClass("active")
-//////////////////////////////////////////
-//				Nav Clicks 				//
-//////////////////////////////////////////
-//BEGIN DISPLAY GALLERY SECTION ON NAV CLICK
-			$("a.gallery").click(function(e){
-				$("div.bio,div.contact,div.resume").hide();
-				$("div.gallery").show();
-				$(this).addClass("active"); 
-				$("a.bio,a.contact,a.resume").removeClass("active"); 
-			})
-//BEGIN DISPLAY BIO SECTION ON NAV CLICK
-			$("a.bio").click(function(e){
-				$("div.contact,div.resume").hide();
-				$("div.bio").show();
-				$(this).addClass("active"); 
-				$("a.gallery,a.contact,a.resume").removeClass("active"); 
-			})
-//BEGIN DISPLAY CONTACT SECTION ON NAV CLICK
-			$("a.contact").click(function(e){
-				$("div.bio,div.resume").hide();
-				$("div.contact").show();
-				$(this).addClass("active"); 
-				$("a.gallery,a.bio,a.resume").removeClass("active"); 
-			})
-/*
-//BEGIN DISPLAY RESUME SECTION ON NAV CLICK
-			$("a.resume").click(function(e){
-				$("div.contact,div.bio").hide();
-				$("div.resume").show();
-				$(this).addClass("active");
-				$("a.gallery,a.contact,a.bio").removeClass("active");
-			})*/
-
-//BEGIN IMAGE CAROUSEL VARIABLES
-	var currentIndex = 0,
-	items = $('.container div'),
-	itemAmt = items.length;
-
-	function cycleItems() {
-		var item = $('.container div').eq(currentIndex);
-		items.hide();
-		item.css('display','inline-block');
-	}
-//BEGIN AUTOSCROLL AFTER 10S (10000ms)
-	var autoSlide = setInterval(function() {
- 		currentIndex += 1;
- 			if (currentIndex > itemAmt - 1) {
-   			currentIndex = 0;
-  			}
-  		cycleItems();
-	}, 10000);
-//BEGIN CONSOLE CALL TO DISPLAY CURRENT TOTAL OF IMAGES IN ARRAY
-		console.log("There are " + itemAmt + " images in this carousel. Displaying IMG #1")
-		//Test Pop-up// alert("There are " + itemAmt + " images in this carousel")
-
-//BEGIN IMAGE CAROUSEL FUNCTIONS FOR NEXT
-	$('.next').click(function() {
-		console.log("Clicked Next, displaying IMG # " + (currentIndex+2)) /*needs work*/
-		//This ^^^^^^ needs fixing
-  		clearInterval(autoSlide);
-  		currentIndex += 1;
-  			if (currentIndex > itemAmt - 1) {
-    		currentIndex = 0;
-  			}
-  		cycleItems();
-	});
-//BEGIN IMAGE CAROUSEL FUNCTIONS FOR PREVIOUS
-	$('.previous').click(function() {
-		console.log("Clicked Previous, displaying IMG # " + (currentIndex-2)) /*needs work*/
-		//This ^^^^^^ needs fixing
-  		clearInterval(autoSlide);
-  		currentIndex -= 1;
-  			if (currentIndex < 0) {
-    		currentIndex = itemAmt - 1;
-  			}
-  		cycleItems();
-	});
-
 //BEGIN SCRIPT END BRACKETS
 	});
 </script>
@@ -128,15 +47,23 @@
 			</nav>
 		</header>
 <!--BEGIN BLOG SECTION-->
-		<div class="blog">	
-			<p>Coming Soon</p>
-				<div>Day 1
- 					<div>
- 						<p>Things I did</p>
- 						<p>Things I wish I did</p>
- 						<p>Afterthoughts</p></div>
-				</div>
-
+			<div class="blog">
+<!--TEMPLATE BLOG POST
+		
+			<div><span>Day 1</span><span>2/14/18 9AM</span>
+ 				<div class="blog-notes">
+ 					<p></p>
+ 					<p></p>
+ 				</div>
+ 			</div>
+-->			
+			<div><span>Day 1</span><span>2/14/18 9AM</span>
+ 				<div class="blog-notes">
+ 					<p>Gotta update the content on this site. There's no consistent styling so most of today i'll be owrking out some drawn out designs and try to build a complete mockup which I can use to thematically code this site a little better. Right now its like I'm throwing extra content here and there but not making the site "look" any better. I thought it would be easier to create a style once I knew what content to put on here, but this is a pet project so there's no expectations. I'll keep adding to this blog each day that I can work on the site until its ready to actually show to people.</p>
+ 					<p>Work today is going to be Riot testing all day, which is awesome cause LOL has some interesting content and I'm obviously into gaming. Never played League of Legends but might one day. Personally I've been on a Zelda BOTW/Gears 4/PUBG bender. Shout out to my brother <a href="https://www.twitch.tv/mcsloppy">McSloppy</a>, who Twitch streams his PUBG matches.</p>
+ 					<p>I also need to make more of an effort to train myself on new things. Part of the reason I build the "experiments" page was for this purpose: to try out things I never have before. The first experiment being my Kingdom Hearts cubes. I wanted to start with something that had a cool feel and relied primarily on CSS, though I want to move onto more complicated things like jQuery/Javascript. Already have knowledge on it and was able to make the slideshow on the homepage but I'd like to try something a little more user friendly.</p>
+ 				</div>
+			</div>
 		</div>
  	</body>
  </html>
