@@ -224,7 +224,7 @@ div.gallery{
 .container img{
     object-position:top;
     width:100%;
-    object-fit:cover;
+    object-fit:scale-down;
     height:300px;
 }
 div.container div p{margin-bottom:0;}
