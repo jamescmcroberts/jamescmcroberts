@@ -97,17 +97,19 @@ textarea {
 }
 @media screen and (max-width:900px){ 
     html body{max-width:100%;}
+    html ul.main-nav li {margin:5px;}
 }
 
 @media screen and (max-width:800px){
     html body{width:100%;}
-    body nav ul li {font-size:1em;width:25%;}
+    body nav ul li {font-size:1em;}
     html body header nav {float:none;width:100%;margin:0;line-height:inherit;text-align:center;height:auto;}
     html header h1{width:100%;float:none;margin:0;}
    /*html header {height:150px;margin:0;}*/
 }
 @media screen and (max-width:743px){
     html ul.list-social {font-size:10px;}
+    html ul.main-nav li {font-size:0;margin-left:20px;margin-right:20px;line-height:15px;}
 }
 
 @media screen and (max-width:611px){
