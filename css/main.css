@@ -196,11 +196,10 @@ body{
     margin: 0 auto;
     }
 nav a {font-family:Helvetica;}
-nav{x-overflow:none;background-color:green;}
+nav{x-overflow:none;background-color:#ACC5C2;}
 ul.main-nav li{margin:0 20px;line-height:50px;}
 ul.main-nav li a {margin:5px;}
 ul.main-nav li{display:inline;white-space:nowrap;}
-body > header > nav > ul.main-nav > li:nth-child(4){text-decoration:line-through;}
 }
     
 /*-----------------------*/ 
@@ -283,7 +282,8 @@ div.container span {text-align:center;}
  
  a{transition:.3s;-webkit-transition:.3s;} 
  a, a:visited{text-decoration:none;color:black;}
- a:hover{color:#ACC5C2}
+ .main-nav a:hover{color:white;}
+ a:hover{color:#ACC5C2;}
  
     /*Header updates*/
  h1, h2,h3{text-align:center;}
@@ -297,8 +297,8 @@ ol, ul {padding:0;margin:0;}
     /*Personal Edits*/
 div.home li, div.bio li {font-size:14px;font-weight:bold;display:inline-block;margin:5px;}
 
-h2 span {color:#ACC5C2;display:inline;}
-h2{color:gold;}
+.bio h2 span {color:#ACC5C2;display:inline;} /*Controls Hobbies h2 formatting*/
+.bio h2{color:gold;}
 div.home,div.contact-area p{font-weight:bold;text-transform:initial;}
 div.contact-area p{margin:0px 30px;}
 form{margin-left:10px;margin-right:10px;box-sizing:border-box;}
@@ -330,6 +330,8 @@ ul.list-social{font-size:12px;width:50%;float:right;}
 ul.list-social a {white-space:nowrap;}
 ul.list-social li{display:block;margin-left:10px;margin-right:10px;padding:5px;}
 img.reaching {width:100%;height:auto;}
+.header-black{color:black;}
+
 
 ul.achievements li{display:block;}
 label:first-of-type{padding-top:0px;}
