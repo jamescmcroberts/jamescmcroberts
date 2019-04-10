@@ -211,6 +211,7 @@ div.gallery{
     margin:0 auto;
     position:relative;
 }
+body > div.home > div.gallery{position:relative;}
 .container{
     background-color:transparent;
     margin:0 auto;
