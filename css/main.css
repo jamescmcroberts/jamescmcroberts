@@ -200,6 +200,8 @@ nav{x-overflow:none;background-color:green;}
 ul.main-nav li{margin:0 20px;line-height:50px;}
 ul.main-nav li a {margin:5px;}
 ul.main-nav li{display:inline;white-space:nowrap;}
+body > header > nav > ul.main-nav > li:nth-child(4){text-decoration:line-through;}
+}
     
 /*-----------------------*/ 
 /*---------START---------*/ 
@@ -327,7 +329,6 @@ ul.list-social{font-size:12px;width:50%;float:right;}
 ul.list-social a {white-space:nowrap;}
 ul.list-social li{display:block;margin-left:10px;margin-right:10px;padding:5px;}
 img.reaching {width:100%;height:auto;}
-div.contact div#content, div.contact:nth-child(1){width:50%;}
 
 ul.achievements li{display:block;}
 label:first-of-type{padding-top:0px;}
